@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main ()
+{
+int i, number;
+time_t nTime;
+number = 5;
+srand((unsigned) time(&nTime));
+printf("Random numbers are: \n");
+for( i = 0 ; i < number ; i++ )
+{
+printf("%d\n", rand() % 1000);
+}
+return(0);
+}
